@@ -70,4 +70,8 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("io.github.sceneview:arsceneview:0.10.0")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
 }

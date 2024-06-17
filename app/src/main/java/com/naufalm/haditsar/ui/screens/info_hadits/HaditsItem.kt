@@ -10,13 +10,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.naufalm.haditsar.data.Hadits
+import com.naufalm.haditsar.data.models.Hadits
 import com.naufalm.haditsar.ui.theme.LightTeal
 import com.naufalm.haditsar.ui.theme.jakartaSansFontFamily
 
 @Composable
-fun HaditsInfoCard(hadits: Hadits) {
+fun HaditsItem(hadits: Hadits) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -29,19 +30,20 @@ fun HaditsInfoCard(hadits: Hadits) {
                 .padding(10.dp)
         ) {
             Text(
-                text = hadits.haditsNumber,
+                text = hadits.no_hadith.toString(),
                 fontFamily = jakartaSansFontFamily,
                 fontWeight = FontWeight.Normal,
                 color = Color.Black
             )
             Text(
-                text = hadits.matan,
+                text = hadits.matan.arabic,
                 fontFamily = jakartaSansFontFamily,
                 fontWeight = FontWeight.Normal,
+                textAlign = TextAlign.End,
                 color = Color.Black
             )
             Text(
-                text = hadits.translate,
+                text = "\"${hadits.matan.translation}\"",
                 fontFamily = jakartaSansFontFamily,
                 fontWeight = FontWeight.Normal,
                 color = Color.Black
