@@ -74,4 +74,14 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("com.google.mlkit:text-recognition:16.0.0")
+    implementation("com.google.accompanist:accompanist-permissions:0.30.1")
+
+    implementation ("androidx.camera:camera-camera2:1.2.3")
+    implementation ("androidx.camera:camera-lifecycle:1.2.3")
+    implementation ("androidx.camera:camera-view:1.3.0-beta01")
+
+    implementation ("com.google.mlkit:vision-common:17.3.0")
+    implementation ("com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0")
+    implementation ("com.google.android.gms:play-services-mlkit-text-recognition:19.0.0")
 }

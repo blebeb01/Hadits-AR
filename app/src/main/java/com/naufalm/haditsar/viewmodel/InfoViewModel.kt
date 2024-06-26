@@ -19,7 +19,6 @@ class InfoViewModel : ViewModel() {
             try {
                 val haditsList = apiService.getPosts()
                 hadistListResponse = haditsList
-                Log.d("PRBB", "getHaditsList: $hadistListResponse")
             } catch (e: Exception) {
                 errorMessage = e.message.toString()
             }

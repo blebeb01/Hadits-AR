@@ -1,6 +1,15 @@
 package com.naufalm.haditsar.ui.screens.scan_hadits
 
+import android.graphics.Bitmap
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Modifier
+import io.github.sceneview.ar.ARScene
+import io.github.sceneview.ar.node.ArModelNode
+import io.github.sceneview.ar.node.ArNode
 
 @Composable
 fun ARScreen() {
@@ -13,7 +22,7 @@ fun ARScreen() {
 //        nodes = nodes,
 //        planeRenderer = true,
 //        onCreate = {arSceneView ->
-//            arSceneView.lightEstimationMode = Config.LightEstimationMode.DISABLED
+//            arSceneView.lightEstimationMode = Bitmap.Config.LightEstimationMode.DISABLED
 //            arSceneView.planeRenderer.isShadowReceiver = false
 //            modelNode.value = ArModelNode(arSceneView.engine, PlacementMode.INSTANT).apply {
 //                loadModelGlbAsync(
